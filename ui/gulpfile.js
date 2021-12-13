@@ -31,9 +31,9 @@ function buildStyles() {
 
 function buildJavascript() {
     return gulp.src('./js/main.js')
-        .pipe(sourcemaps.init())
-        .pipe(webpack())
-        .pipe(sourcemaps.write())
+        .pipe(webpack({
+            devtool: 'source-map'
+        }))
         .pipe(gulp.dest(destinationDir))
 }
 

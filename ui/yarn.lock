@@ -348,6 +348,7 @@ __metadata:
     gulp: ^4.0.2
     gulp-sass: ^5.0.0
     gulp-sourcemaps: ^3.0.0
+    jquery: ^3.6.0
     sass: ^1.45.0
     webpack: ^5.65.0
     webpack-stream: ^7.0.0
@@ -2476,6 +2477,13 @@ __metadata:
     merge-stream: ^2.0.0
     supports-color: ^8.0.0
   checksum: eb0b6be412103299c3d8643ad26daf862826ca841bd2a3ff47d2d931804ab7d7f0db2fcdea7dbf47ce8eacb7742b3f2586c2d6ebdaa8d0ac77c65f7b698e7683
+  languageName: node
+  linkType: hard
+
+"jquery@npm:^3.6.0":
+  version: 3.6.0
+  resolution: "jquery@npm:3.6.0"
+  checksum: 8fd5fef4aa48fd374ec716dd1c1df1af407814a228e15c1260ca140de3a697c2a77c30c54ff1d238b6a3ab4ddc445ddeef9adce6c6d28e4869d85eb9d3951c0e
   languageName: node
   linkType: hard
 
