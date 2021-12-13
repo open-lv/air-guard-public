@@ -21,7 +21,7 @@ if(!fs.existsSync(destinationDir)){
 }
 
 function buildStyles() {
-    return gulp.src('./sass/**/*.scss')
+    return gulp.src('./sass/index.scss')
         .pipe(sourcemaps.init())
         .pipe(sass.sync({outputStyle: 'compressed'}).on('error', sass.logError))
         .pipe(sourcemaps.write())
