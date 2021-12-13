@@ -4,6 +4,7 @@ const fs = require('fs');
 const gulp = require('gulp');
 const sass = require('gulp-sass')(require('sass'));
 const sourcemaps = require('gulp-sourcemaps');
+const webpack = require('webpack-stream');
 
 let destinationDir = null;
 
@@ -21,17 +22,24 @@ if(!fs.existsSync(destinationDir)){
 }
 
 function buildStyles() {
-    return gulp.src('./sass/index.scss')
+    return gulp.src('./sass/main.scss')
         .pipe(sourcemaps.init())
         .pipe(sass.sync({outputStyle: 'compressed'}).on('error', sass.logError))
         .pipe(sourcemaps.write())
-        .pipe(gulp.dest(`${destinationDir}/css`));
+        .pipe(gulp.dest(destinationDir));
 }
 
-exports.buildStyles = buildStyles;
+function buildJavascript() {
+    return gulp.src('./js/main.js')
+        .pipe(sourcemaps.init())
+        .pipe(webpack())
+        .pipe(sourcemaps.write())
+        .pipe(gulp.dest(destinationDir))
+}
 
-exports.build = gulp.parallel(buildStyles);
+exports.build = gulp.parallel(buildStyles, buildJavascript);
 
 exports.watch = function () {
     gulp.watch('./sass/**/*.scss', {ignoreInitial: false}, buildStyles);
+    gulp.watch('./js/**/*.js', {ignoreInitial: false}, buildJavascript);
 };
