@@ -3,3 +3,13 @@
 _site
 .sass-cache
 .jekyll-metadata
+
+.yarn/*
+!.yarn/patches
+!.yarn/releases
+!.yarn/plugins
+!.yarn/sdks
+!.yarn/versions
+.pnp.*
+
+node_modules

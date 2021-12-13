@@ -36,6 +36,11 @@ exclude:
    - Gemfile.lock
    - .idea/
    - docker-compose.yml
+   - node_modules/
+   - package.json
+   - yarn.lock
+   - README.md
+   - CNAME
 
 # Social
 github_username:  open-lv
