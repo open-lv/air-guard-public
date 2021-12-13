@@ -7,7 +7,7 @@ services:
     ports:
       - 4000:4000
     volumes:
-      - ./jekyll:/srv/jekyll:delegated
+      - ./docs:/srv/jekyll:delegated
   ui:
     image: node:alpine
     entrypoint: ""
@@ -17,4 +17,4 @@ services:
       GULP_DESTINATION_DIR: /dist
     volumes:
       - ./ui:/usr/src:delegated
-      - ./jekyll/assets/compiled:/dist:delegated
+      - ./docs/assets/compiled:/dist:delegated

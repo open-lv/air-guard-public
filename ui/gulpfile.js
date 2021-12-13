@@ -11,7 +11,7 @@ if(process.env.GULP_DESTINATION_DIR){
     destinationDir = process.env.GULP_DESTINATION_DIR;
     process.stdout.write(`Using destination directory from environment variables: "${destinationDir}"\n`);
 }else{
-    destinationDir = '../jekyll/assets/compiled';
+    destinationDir = '../docs/assets/compiled';
     process.stdout.write(`Using default destination directory: "${destinationDir}"\n`);
 }
 
