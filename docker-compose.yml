@@ -13,6 +13,8 @@ services:
     entrypoint: ""
     command: "/bin/sh -c 'yarn install --immutable && yarn run watch'"
     working_dir: /usr/src/
+    environment:
+      GULP_DESTINATION_DIR: /dist
     volumes:
       - ./ui:/usr/src:delegated
       - ./jekyll/assets/compiled:/dist:delegated
