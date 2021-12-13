@@ -32,7 +32,7 @@ function buildStyles() {
 function buildJavascript() {
     return gulp.src('./js/main.js')
         .pipe(webpack({
-            devtool: 'source-map'
+          devtool: 'inline-source-map',
         }))
         .pipe(gulp.dest(destinationDir))
 }
