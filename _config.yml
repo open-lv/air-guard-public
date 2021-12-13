@@ -24,7 +24,7 @@ url: https://gaisasargs.lv  # the base hostname and protocol for your site, e.g.
 
 # Build settings
 markdown: kramdown
-theme: minima
+theme:
 plugins:
   - jekyll-feed
 
