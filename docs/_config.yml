@@ -32,18 +32,7 @@ theme:
 exclude:
    - Gemfile
    - Gemfile.lock
-   - .idea/
-   - docker-compose.yml
-   - node_modules/
-   - package.json
-   - yarn.lock
-   - README.md
    - CNAME
 
 # Social
 github_username:  open-lv
-
-collections:
-  posts:
-    output: false
-encoding: "utf-8"
