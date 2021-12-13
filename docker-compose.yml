@@ -7,7 +7,7 @@ services:
     ports:
       - 4000:4000
     volumes:
-      - .:/srv/jekyll:delegated
+      - ./jekyll:/srv/jekyll:delegated
   ui:
     image: node:alpine
     command: yarn install
