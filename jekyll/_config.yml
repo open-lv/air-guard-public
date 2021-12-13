@@ -25,8 +25,6 @@ url: https://gaisasargs.lv  # the base hostname and protocol for your site, e.g.
 # Build settings
 markdown: kramdown
 theme:
-plugins:
-  - jekyll-feed
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
@@ -44,3 +42,8 @@ exclude:
 
 # Social
 github_username:  open-lv
+
+collections:
+  posts:
+    output: false
+encoding: "utf-8"

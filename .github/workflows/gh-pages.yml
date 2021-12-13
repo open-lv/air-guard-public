@@ -15,9 +15,10 @@ jobs:
       - name: Install and Build 🔧
         run: |
           yarn install --frozen-lockfile
+          yarn run build
 
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@4.1.7
         with:
           branch: gh-pages
-          folder: .
+          folder: ./jekyll/assets/compiled

@@ -10,7 +10,9 @@ services:
       - ./jekyll:/srv/jekyll:delegated
   ui:
     image: node:alpine
-    command: yarn install
+    entrypoint: ""
+    command: "/bin/sh -c 'yarn install --immutable && yarn run watch'"
     working_dir: /usr/src/
     volumes:
-      - .:/usr/src/:delegated
+      - ./ui:/usr/src:delegated
+      - ./jekyll/assets/compiled:/dist:delegated
