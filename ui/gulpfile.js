@@ -25,7 +25,7 @@ function buildStyles() {
     return gulp.src('./sass/main.scss')
         .pipe(sourcemaps.init())
         .pipe(sass.sync({outputStyle: 'compressed'}).on('error', sass.logError))
-        .pipe(sourcemaps.write())
+        .pipe(sourcemaps.write('.'))
         .pipe(gulp.dest(destinationDir));
 }
 
