@@ -7,3 +7,4 @@
 .pnp.*
 
 node_modules
+package-lock.json # Yarn has to be used instead of NPM
