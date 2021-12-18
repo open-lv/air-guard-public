@@ -77,6 +77,11 @@ body {
 	background-repeat: repeat !important;
 	
 }
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: #fff;
+  }
+}
 /*
  * Dummy devices (replace them with your own or something else entirely!)
  */
