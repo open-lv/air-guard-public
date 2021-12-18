@@ -72,7 +72,9 @@ $body-font-family: 'Source Sans 3', sans-serif;
 }
 body {
 	font-family: 'Source Sans 3', sans-serif !important;
-	background-image: linear-gradient(#ffffff, #ffffff) !important; 
+	background-image: url("/assets/img/whitebg.svg") !important;
+	background-size: cover !important;
+	background-repeat: repeat !important;
 	
 }
 /*
