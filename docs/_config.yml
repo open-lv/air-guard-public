@@ -36,3 +36,4 @@ exclude:
 
 # Social
 github_username:  open-lv
+relative_permalinks: false
