@@ -1,25 +1,390 @@
 ---
 layout: default
 ---
+<!-- es ieliku headeri te, jo ir vēls un man zb tā "modularitāte", piedodiet-->
+<strong><strong><strong><span class="super strong encryption visually-hidden"></span></strong></strong></strong>
+
+
+<nav class="sticky-top navbar navbar-expand-lg navbar-dark bg-primary">
+    <div class="container">
+        <a class="navbar-brand" href="{{ site.url }}" style="display: none;">
+            {% include components/logo-svg.html color="#fff" width="120" %} 
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="/">GALVENĀ</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/pieteikties">Pieteikties</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/atbalsti">Atbalstīt</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/salikt">Salikšanas pamācība</a>
+                </li>
+                
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- GALVENĀ -->
 <main>
-    <h1 class="visually-hidden">Gaisa sargs</h1>
-    <div class="embed-responsive embed-responsive-21by9">
-        <video class="embed-responsive-item" autoplay muted onclick="this.muted = !this.muted">
-            <source src="/assets/vid/main.mp4" type="video/mp4">
-            Your browser does not support the video tag.
-        </video>
-    </div>
+
+	<br><br>
+	<div class="d-flex hm-hero justify-content-center align-items-center">	
+		<div class="container">
+		<!-- rakstu inline, jo man scss kaut kādu iemeslu dēļ nemonitorē un zb rekompilēt manuāli uz katru izmaiņu, ja kādam rūp- taisiet PR -->
+		<style> 
+			.main-title{font-weight: 600 !important; font-size: 5rem !important; color: #0f47a1;}
+			.h1logo {margin-bottom: 40px;}
+			.mainleft{ margin-left: 10px;}
+			.main-subtitle {margin-left: 10px; border-left: 10px solid #0f47a1; padding-left: 10px;}
+			.zila-linija-horiz {margin: 50px auto 50px auto; display:inline-block; height: 10px; width: 80%; background-color: #0f47a1}
+			.zilais {color: #0f47a1;}
+		 </style>
+		 
 
 
-    <div class="px-4 py-5 my-5 text-center">
-        <figure>
-            <blockquote class="blockquote">
-                <p>Mani sauc GAISA SARGS, es esmu ikvienas telpas SUPERVARONIS!</p>
-                <p>Mana superspēja ir noteikt telpas gaisa kvalitāti un ar tavu palīdzību to uzlabot!</p>
-            </blockquote>
-            <figcaption class="blockquote-footer">
-                <cite title="Source Title">Gaisa sargs</cite>
-            </figcaption>
-        </figure>
-    </div>
+		  <div class="row">
+				<div class="col-sm mainleft"> <!-- teksts -->
+					<img src="/assets/img/logo-horiz.svg" WIDTH=100% class="h1logo"></img>
+					<h1 class="main-title visually-hidden">GAISA SARGS </h1>
+					<h3 class="main-subtitle">&emsp;ir BEZMAKSAS telpu gaisa kvalitātes monitoringa komplekts, 
+						kuru var <a href="/pieteikties" title="pieteikties GAISA SARGA saņešanai">saņemt</a> 
+						organizācijas vai iestādes, kas strādā ar bērniem un jauniešiem. Tā salikšanu veic 
+						gala lietotāji. Projekta izmaksas sedz tā 
+						<a href="/atbalsti" title="Apskati atbalstītāju sarakstu">ziedotāji</a> un to ir 
+						radījusi entuziastu <a href="/komanda">komanda</a>, par to nesaņemot atlīdzību. 
+						Projekta materiāli, pirmkods un dizaini ir pieejami <a href="https://github.com/open-lv/air-guard" target="_blank">github</a> vietnē. 
+					</h3>
+					
+				</div>
+		  
+				<div class="col-sm"> <!-- YT VIDEO -->
+				  <iframe src="https://www.youtube.com/embed/LWUC9X_pP7w?vq=hd1080&modestbranding=1&rel=0&theme=light&color=white" width="100%" height="400" frameborder="0"></iframe>
+				</div>
+				
+			
+				
+			
+		  </div>
+		  
+		</div>
+
+	</div>
+	  <br><br>  <br><br>
+		<div class="container">
+			<div class="row">
+				<div class="col w-50">
+					<center>
+						<p class="cik-gab-sub align-text-bottom dimants1">Parasti picas kastē var atrast gardumus..</p>
+						<div style="max-width: 60%">
+							<img src="/assets/img/picas-kaste.jpg" WIDTH=100%/>
+						</div>
+						<p class="cik-gab-sub align-text-bottom dimants4">...Šoreiz tajā atradīsi SUPERVARONI!</p>
+						<h3 class="main-subtitle">Ņem dalību aizraujošā procesā, kura rezultātā JŪS kopīgi radīsiet SUPERVARONI!!
+						GAISA SARGS piedzimst ar jauniešu roku palīdzību- saliekot un salodējot tā sastāvdaļas. Nav lodēšanas superspējas? Satraukumam nav pamata- GAISA SARGA komplekts ir veidots tā, lai kļūdīties būtu grūti, un, lai sekojot mūsu sagatavotajām video norādēm, ikviens procesa dalībnieks varētu iemācīties lodēt.
+						</h3>
+					</center>
+				</div>
+			</div>
+		</div>
+	
+	<div class="container">
+	<style>
+	.cik-gab {font-size: 14rem; color: #0f47a1; font-weight: 900; font-style: italic;}
+	.cik-gab-sub {font-size: 4rem; color: #0f47a1; font-weight: 900; font-style: italic;}
+	.dimants1 {background-image: url("/assets/img/dimants-1.svg"); background-repeat: no-repeat; background-size: 50px; background-position: left bottom;}
+	.dimants2 {background-image: url("/assets/img/dimants-1.svg"); background-repeat: no-repeat; background-size: 50px; background-position: top center;}
+	.dimants3 {background-image: url("/assets/img/dimants-2.svg"); background-repeat: no-repeat; background-size: 50px; background-position: 20% 30%;}
+	.dimants4 {background-image: url("/assets/img/dimants-2.svg"); background-repeat: no-repeat; background-size: 50px; background-position: bottom left;}
+	.pogas-teksts{font-size: 32px !important; font-weight: 700; font-style: italic;}
+	.dosje-h2{font-weight: 700; font-style: italic;}
+	</style>
+	<center><span class="zila-linija-horiz"></span></center>
+
+		<div class="row ">
+			<div class="col-sm  m-0 p-0 dimants2"><p class="cik-gab text-end">101x</p></div>
+			<div class="col-sm dimants1"><p class="cik-gab-sub text-start align-text-bottom">VARAM RADĪT</p></div>
+		</div>
+		<div class="row ">
+			<div class="col-sm  m-0 p-0"><p class="cik-gab-sub text-end">RINDA</p></div>
+			<div class="col-sm dimants3"><p class="cik-gab text-start">3</p></div>
+		</div>
+		
+		<div class="row justify-content-center align-items-center">
+			
+			<a class="btn btn-primary btn-lg btn-block mx-5 my-5 col-sm pogas-teksts" href="/atbalsti"><svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" fill="currentColor" class="bi bi-cash-coin" viewBox="0 0 16 16">
+  <path fill-rule="evenodd" d="M11 15a4 4 0 1 0 0-8 4 4 0 0 0 0 8zm5-4a5 5 0 1 1-10 0 5 5 0 0 1 10 0z"/>
+  <path d="M9.438 11.944c.047.596.518 1.06 1.363 1.116v.44h.375v-.443c.875-.061 1.386-.529 1.386-1.207 0-.618-.39-.936-1.09-1.1l-.296-.07v-1.2c.376.043.614.248.671.532h.658c-.047-.575-.54-1.024-1.329-1.073V8.5h-.375v.45c-.747.073-1.255.522-1.255 1.158 0 .562.378.92 1.007 1.066l.248.061v1.272c-.384-.058-.639-.27-.696-.563h-.668zm1.36-1.354c-.369-.085-.569-.26-.569-.522 0-.294.216-.514.572-.578v1.1h-.003zm.432.746c.449.104.655.272.655.569 0 .339-.257.571-.709.614v-1.195l.054.012z"/>
+  <path d="M1 0a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h4.083c.058-.344.145-.678.258-1H3a2 2 0 0 0-2-2V3a2 2 0 0 0 2-2h10a2 2 0 0 0 2 2v3.528c.38.34.717.728 1 1.154V1a1 1 0 0 0-1-1H1z"/>
+  <path d="M9.998 5.083 10 5a2 2 0 1 0-3.132 1.65 5.982 5.982 0 0 1 3.13-1.567z"/>
+</svg>&nbsp&nbsp&nbsp&nbspATBALSTI ZIEDOJOT</a>
+			<a class="btn btn-primary btn-lg btn-block mx-5 my-5 col-sm pogas-teksts" href="/pieteikties"><svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" fill="currentColor" class="bi bi-envelope-plus" viewBox="0 0 16 16">
+  <path d="M2 2a2 2 0 0 0-2 2v8.01A2 2 0 0 0 2 14h5.5a.5.5 0 0 0 0-1H2a1 1 0 0 1-.966-.741l5.64-3.471L8 9.583l7-4.2V8.5a.5.5 0 0 0 1 0V4a2 2 0 0 0-2-2H2Zm3.708 6.208L1 11.105V5.383l4.708 2.825ZM1 4.217V4a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v.217l-7 4.2-7-4.2Z"/>
+  <path d="M16 12.5a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0Zm-3.5-2a.5.5 0 0 0-.5.5v1h-1a.5.5 0 0 0 0 1h1v1a.5.5 0 0 0 1 0v-1h1a.5.5 0 0 0 0-1h-1v-1a.5.5 0 0 0-.5-.5Z"/>
+</svg>&nbsp&nbsp&nbsp&nbspPIESAKIES SAŅEMT*</a>
+			
+		</div>
+		<p class="text-center p-10">*ikviens pieteikums tiek izvērtēts kritēriju atbilstībai, pieteikums negarantē piegādi. Mēs neesam diži bagātnieki, ja.</p>
+		
+			
+			
+		
+	<center><span class="zila-linija-horiz"></span></center>
+		 
+	</div>
+
+	<center>
+		<img src="assets/img/gaisa-sargs-mugshot.svg" width=50%/>
+		<p class="cik-gab-sub align-text-bottom dimants3">SUPERVAROŅA DOSJĒ~~</p>
+
+	
+
+	<div class="container">
+	  <div class="row align-items-center">
+		<div class="col">
+			<img src="/assets/img/miegainiba350.jpg"/>
+			<h2 class="text-uppercase zilais dosje-h2">Nogurums, miegainība?</h2>
+			<h4>Iespējams telpā ir paaugstināts oglekļa dioksīda līmenis. Mūsu deguns to nesaož!
+			Uzzini, kad ir laiks atvērt logu, ar GAISA SARGA Palīdzību. 
+			Paaugstināts oglekļa dioksīda līmenis telpā ir viens no priekšvēstnešiem videi, 
+			kurā līpīgiem vīrusiem ir vieglāk izplatīties.</h4>
+		</div>
+		<div class="col">
+			<img src="/assets/img/sensors350.jpg"/>
+		   <h2 class="text-uppercase zilais dosje-h2">Supervaroņa deguns</h2>
+		  <h4>Īsts, precīzs un melot nemīlošs sensors (<a href="https://www.winsen-sensor.com/d/files/infrared-gas-sensor/mh-z19c-pins-type-co2-manual-ver1_0.pdf" target="_blank">NDIR WINSEN MH-Z19B</a>) ir GAISA SARGA superspēju noslēpuma atslēga. Tas nepārtraukti ošņā telpas gaisu un dod ziņu GAISA SARGA smadzenēm par novērojumiem.</h4>
+		</div>
+		<div class="col">
+			<img src="/assets/img/smadzenes350.jpg"/>
+			<h2 class="text-uppercase zilais dosje-h2">Supervaroņa smadzenes</h2>
+			<h4>Nosēšanās uz Mēness virsmas bija visas cilvēces iespaidīgākais sasniegums.
+				Pirmā Mēness kuģa datora smadzenes bija vairāk kā 200 reizes lēnākas par GAISA SARGA smadzenēm- ESP32 mikrokontrolieri. 
+				Apskati supervaroņa <a href="/saliec" target="_blank">programmēšanas pamācību</a>, lai padarītu savu GAISA SARGU unikālu.
+			</h4>
+		</div>
+	  </div>
+	  <br><br>
+	  
+	  
+	  
+	  
+	  	<div class="row align-items-center">
+		<div class="col">
+			<img src="/assets/img/televizors350.jpg"/>
+			<h2 class="text-uppercase zilais dosje-h2">Televizors skudrām?</h2>
+			<h4>
+				GAISA SARGA krūtis rotā mazs ekrāns, uz kura vari redzēt oglekļa dioksīda daudzumu 
+				apkārtējā gaisā. Personalizējot GAISA SARGA smadzeņu programmu- 
+				variet uz tā attēlot savu informāciju.
+			</h4>
+		</div>
+		<div class="col">
+			<img src="/assets/img/rokturis350.jpg"/>
+			<h2 class="text-uppercase zilais dosje-h2">Loga rokturis</h2>
+			<h4>Tas, diemžēl, nav atrodams GAISA SARGA picas kastē.
+			JŪS, GAISA SARGS un loga rokturis ir supervaroņu komanda, kas aizsargās telpas gaisu!</h4>
+		</div>
+		<div class="col">
+			<img src="/assets/img/pikstulis350.jpg"/>
+			<h2 class="text-uppercase zilais dosje-h2">Spalga balss</h2>
+			<h4>GAISA SARGS ir lakonisks, bet kad tam ir ko teikt- tajā jaieklausās, jo to ir grūti nedzirdēt.
+				Mainot GAISA SARGA smadzeņu programmu vari iemācīt tam jaunas dziesmas!
+			</h4>
+		</div>
+	  </div>
+	  	  <br><br>
+		  
+		  
+		  
+		  
+	  	<div class="row align-items-center">
+		<div class="col">
+			<img src="/assets/img/gaisma350.jpg"/>
+			<h2 class="text-uppercase zilais dosje-h2">Gandrīz vērīgas acis</h2>
+			<h4>Lai arī GAISA SARGA superspēja ir izcila oža, tas spēj arī redzēt. Diezgan slikti, bet tomēr- redze ir redze. GAISA SARGS spēj sajust, cik telpā ir gaišs.</h4>
+		</div>
+		<div class="col">
+			<img src="/assets/img/instrumenti350.jpg"/>
+			<h2 class="text-uppercase zilais dosje-h2">Instrumenti salikšanai</h2>
+			<h4>
+				GAISA SARGA picas kaste satur pamatinstrumentu komplektu, kas nepieciešams, lai varētu lodēt elektronikas plates. 
+				Pēc komplekta salikšanas instrumentus varēsiet izmantot lietu remontam un citām operācijām.
+			</h4>
+		</div>
+		<div class="col">
+			<img src="/assets/img/makoniem350.jpg"/>
+			<h2 class="text-uppercase zilais dosje-h2">Tāds sapņains tipiņš</h2>
+			<h4>GAISA SARGAM arī ir sapņi. GAISA SARGS reizēm blenž tālumā, sapņojot par iespējām, kādas var sasniegt tā jaudīgās smadzenes- mākoņošana INTERNETĀ, bezvadu tīkli un bat zilzobi!
+			</h4>
+		</div>
+	  </div>
+	</center>	
+	<div class="container">
+		<div class="row justify-content-center align-items-center">
+			
+			<a class="btn btn-primary btn-lg btn-block mx-5 my-5 col-sm pogas-teksts" href="/atbalsti"><svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" fill="currentColor" class="bi bi-cash-coin" viewBox="0 0 16 16">
+  <path fill-rule="evenodd" d="M11 15a4 4 0 1 0 0-8 4 4 0 0 0 0 8zm5-4a5 5 0 1 1-10 0 5 5 0 0 1 10 0z"/>
+  <path d="M9.438 11.944c.047.596.518 1.06 1.363 1.116v.44h.375v-.443c.875-.061 1.386-.529 1.386-1.207 0-.618-.39-.936-1.09-1.1l-.296-.07v-1.2c.376.043.614.248.671.532h.658c-.047-.575-.54-1.024-1.329-1.073V8.5h-.375v.45c-.747.073-1.255.522-1.255 1.158 0 .562.378.92 1.007 1.066l.248.061v1.272c-.384-.058-.639-.27-.696-.563h-.668zm1.36-1.354c-.369-.085-.569-.26-.569-.522 0-.294.216-.514.572-.578v1.1h-.003zm.432.746c.449.104.655.272.655.569 0 .339-.257.571-.709.614v-1.195l.054.012z"/>
+  <path d="M1 0a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h4.083c.058-.344.145-.678.258-1H3a2 2 0 0 0-2-2V3a2 2 0 0 0 2-2h10a2 2 0 0 0 2 2v3.528c.38.34.717.728 1 1.154V1a1 1 0 0 0-1-1H1z"/>
+  <path d="M9.998 5.083 10 5a2 2 0 1 0-3.132 1.65 5.982 5.982 0 0 1 3.13-1.567z"/>
+</svg>&nbsp&nbsp&nbsp&nbspATBALSTI ZIEDOJOT</a>
+			<a class="btn btn-primary btn-lg btn-block mx-5 my-5 col-sm pogas-teksts" href="/pieteikties"><svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" fill="currentColor" class="bi bi-envelope-plus" viewBox="0 0 16 16">
+  <path d="M2 2a2 2 0 0 0-2 2v8.01A2 2 0 0 0 2 14h5.5a.5.5 0 0 0 0-1H2a1 1 0 0 1-.966-.741l5.64-3.471L8 9.583l7-4.2V8.5a.5.5 0 0 0 1 0V4a2 2 0 0 0-2-2H2Zm3.708 6.208L1 11.105V5.383l4.708 2.825ZM1 4.217V4a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v.217l-7 4.2-7-4.2Z"/>
+  <path d="M16 12.5a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0Zm-3.5-2a.5.5 0 0 0-.5.5v1h-1a.5.5 0 0 0 0 1h1v1a.5.5 0 0 0 1 0v-1h1a.5.5 0 0 0 0-1h-1v-1a.5.5 0 0 0-.5-.5Z"/>
+</svg>&nbsp&nbsp&nbsp&nbspPIESAKIES SAŅEMT*</a>
+			
+		</div>
+		<p class="text-center p-10">*ikviens pieteikums tiek izvērtēts kritēriju atbilstībai, pieteikums negarantē piegādi. Mēs neesam diži bagātnieki, ja.</p>
+	</div>
+		<center><span class="zila-linija-horiz"></span></center>
+		 
+	<div class="container">
+		<div class="row">
+			<center><p class="cik-gab-sub align-text-bottom dimants4">Nav kauns nezināt, bet gan negribēt zināt!~</p></center>
+		</div>
+		<br><br>
+		<center>
+			<h3 class="text-uppercase zilais dosje-h2">Neesmu skola, pulciņš vai cita organizācija, kas darbojas ar bērniem/jauniešiem. Esmu vienkārši onkulis/tante, kas arī grib savu supervaroni. Kā varu to iegādāties?</h3>
+			<br>
+			<h4>
+				Lai izvairītos no liekām klapatām, mēs, projekta autori, esam izvēlējušies GAISA SARGU nepiedāvāt vienkāršā apmaiņā pret naudu. Tas būtu pārāk vienkārši. Mēs to <a href="https://github.com/open-lv/air-guard" target="_blank">dodam bez maksas</a>! Ja izveidot savu GAISA SARGU no failiem tev šķiet pārāk sarežģīti- sniedz šo iespēju Latvijas bērniem un jauniešiem <a href="/atbalsti">atbalstot projektu</a>.
+
+			</h4>
+			<br>
+			<h3 class="text-uppercase zilais dosje-h2">Kas pie lodāmura ir “gaisa kvalitāte”? Kas tā tāda?</h3>
+			<br>
+			<h4>
+				Mēs esam dzīvas radības, kuru darbībai ir nepieciešams skābeklis. Noslēgtās telpās tas ir tikai tik daudz cik tas tur ir. Kad mūsu plaušas ir paņēmušas tām nepieciešamo skābekli- tās no asinīm izvada organisma darbības rezultātā radīto ogļskābo gāzi. Jā, to pašu, kas atrodama gāzētos dzērienos. Kad telpā burtiski nav ko elpot- mēs smokam nost. Mūsu smadzenes paliek lēnākas, mēs nespējam koncentrēties, mums nāk miegs un visas apgūtās zināšanas pa vienu ausi iekšā- pa otru ārā. Lieki piebilst, ka sasmakušās telpās daudz vairāk mīl izplatīties dažādi vīrusi, kas to tik vien gaida kā sabojāt mums dienu. Atbilstoši vēdinātas telpas ļauj mums būt mūsu labākajai versijai. Kā zināt kas ir “atbilstoši vēdinātas telpas”? Tā ir problēma, kuru risina GAISA SARGS!
+
+
+			</h4>
+			<br>
+			<h3 class="text-uppercase zilais dosje-h2">Parādiet man pētījumus! Kur ir pētījumi?</h3>
+			<br>
+			<h4>
+				Jā, kur ir pētījumi? KUR IR PĒTĪJUMI????
+
+			</h4>
+			<br>
+			<h3 class="text-uppercase zilais dosje-h2">50 eur? Kāpēc tik dārgi? Aļikā šitais maksā trīs doļus! Bezkaunība!</h3>
+			<br>
+			<h4>
+				Lai GAISA SARGS būtu patiess SUPERVARONIS- varonis, kam var uzticēties, tā degunam ir jābūt atbilstošam supervaroņa prasībām. <i>Aļika</i> lētie deguni ļoti melo, ja iekārtā tāds maz ir ielikts. Vai tu gribētu, lai bērnus izrīkotu melis? Mēs arī nē. Tāpēc mēs lietojam <i>Aļika</i> <a href="https://www.winsen-sensor.com/d/files/infrared-gas-sensor/mh-z19c-pins-type-co2-manual-ver1_0.pdf" target="_blank">dārgo degunu</a>.
+				Visam ir cena, tai skaitā SMADZENĒM un pārējām GAISA SARGA detaļām (links uz BOM, ar cenām, piegādātājiem). GAISA SARGS ir radīts kā bezpeļņas projekts, tā komanda (links uz komandu?) projektā iesaistās brīvprātīgi un par to nesaņem atalgojumu. Jo vairāk GAISA SARGUS mēs spēsim radīt- jo zemākas būs tā detaļu izmaksas. (Links uz ziedot>)
+
+
+			</h4>
+			<br>
+			<h3 class="text-uppercase zilais dosje-h2">Neesmu skola, pulciņš vai cita organizācija, kas darbojas ar bērniem/jauniešiem. Esmu vienkārši onkulis/tante, kas arī grib savu supervaroni. Kā varu to iegādāties?</h3>
+			<br>
+			<h4>
+				Lai izvairītos no liekām klapatām, mēs, projekta autori, esam izvēlējušies GAISA SARGU nepiedāvāt vienkāršā apmaiņā pret naudu. Tas būtu pārāk vienkārši. Mēs to <a href="https://github.com/open-lv/air-guard" target="_blank">dodam bez maksas</a>! Ja izveidot savu GAISA SARGU no failiem tev šķiet pārāk sarežģīti- sniedz šo iespēju Latvijas bērniem un jauniešiem <a href="/atbalsti">atbalstot projektu</a>.
+
+			</h4>
+			<br>
+			<h3 class="text-uppercase zilais dosje-h2">Neesmu skola, pulciņš vai cita organizācija, kas darbojas ar bērniem/jauniešiem. Esmu vienkārši onkulis/tante, kas arī grib savu supervaroni. Kā varu to iegādāties?</h3>
+			<br>
+			<h4>
+				Lai izvairītos no liekām klapatām, mēs, projekta autori, esam izvēlējušies GAISA SARGU nepiedāvāt vienkāršā apmaiņā pret naudu. Tas būtu pārāk vienkārši. Mēs to <a href="https://github.com/open-lv/air-guard" target="_blank">dodam bez maksas</a>! Ja izveidot savu GAISA SARGU no failiem tev šķiet pārāk sarežģīti- sniedz šo iespēju Latvijas bērniem un jauniešiem <a href="/atbalsti">atbalstot projektu</a>.
+
+			</h4>
+			<br>
+			<h3 class="text-uppercase zilais dosje-h2">Neesmu skola, pulciņš vai cita organizācija, kas darbojas ar bērniem/jauniešiem. Esmu vienkārši onkulis/tante, kas arī grib savu supervaroni. Kā varu to iegādāties?</h3>
+			<br>
+			<h4>
+				Lai izvairītos no liekām klapatām, mēs, projekta autori, esam izvēlējušies GAISA SARGU nepiedāvāt vienkāršā apmaiņā pret naudu. Tas būtu pārāk vienkārši. Mēs to <a href="https://github.com/open-lv/air-guard" target="_blank">dodam bez maksas</a>! Ja izveidot savu GAISA SARGU no failiem tev šķiet pārāk sarežģīti- sniedz šo iespēju Latvijas bērniem un jauniešiem <a href="/atbalsti">atbalstot projektu</a>.
+
+			</h4>
+			<br>
+			<h3 class="text-uppercase zilais dosje-h2">Neesmu skola, pulciņš vai cita organizācija, kas darbojas ar bērniem/jauniešiem. Esmu vienkārši onkulis/tante, kas arī grib savu supervaroni. Kā varu to iegādāties?</h3>
+			<br>
+			<h4>
+				Lai izvairītos no liekām klapatām, mēs, projekta autori, esam izvēlējušies GAISA SARGU nepiedāvāt vienkāršā apmaiņā pret naudu. Tas būtu pārāk vienkārši. Mēs to <a href="https://github.com/open-lv/air-guard" target="_blank">dodam bez maksas</a>! Ja izveidot savu GAISA SARGU no failiem tev šķiet pārāk sarežģīti- sniedz šo iespēju Latvijas bērniem un jauniešiem <a href="/atbalsti">atbalstot projektu</a>.
+
+			</h4>
+			<br>
+			<h3 class="text-uppercase zilais dosje-h2">Neesmu skola, pulciņš vai cita organizācija, kas darbojas ar bērniem/jauniešiem. Esmu vienkārši onkulis/tante, kas arī grib savu supervaroni. Kā varu to iegādāties?</h3>
+			<br>
+			<h4>
+				Lai izvairītos no liekām klapatām, mēs, projekta autori, esam izvēlējušies GAISA SARGU nepiedāvāt vienkāršā apmaiņā pret naudu. Tas būtu pārāk vienkārši. Mēs to <a href="https://github.com/open-lv/air-guard" target="_blank">dodam bez maksas</a>! Ja izveidot savu GAISA SARGU no failiem tev šķiet pārāk sarežģīti- sniedz šo iespēju Latvijas bērniem un jauniešiem <a href="/atbalsti">atbalstot projektu</a>.
+
+			</h4>
+			<br>
+			<h3 class="text-uppercase zilais dosje-h2">Neesmu skola, pulciņš vai cita organizācija, kas darbojas ar bērniem/jauniešiem. Esmu vienkārši onkulis/tante, kas arī grib savu supervaroni. Kā varu to iegādāties?</h3>
+			<br>
+			<h4>
+				Lai izvairītos no liekām klapatām, mēs, projekta autori, esam izvēlējušies GAISA SARGU nepiedāvāt vienkāršā apmaiņā pret naudu. Tas būtu pārāk vienkārši. Mēs to <a href="https://github.com/open-lv/air-guard" target="_blank">dodam bez maksas</a>! Ja izveidot savu GAISA SARGU no failiem tev šķiet pārāk sarežģīti- sniedz šo iespēju Latvijas bērniem un jauniešiem <a href="/atbalsti">atbalstot projektu</a>.
+
+			</h4>
+			<br>
+			<h3 class="text-uppercase zilais dosje-h2">Neesmu skola, pulciņš vai cita organizācija, kas darbojas ar bērniem/jauniešiem. Esmu vienkārši onkulis/tante, kas arī grib savu supervaroni. Kā varu to iegādāties?</h3>
+			<br>
+			<h4>
+				Lai izvairītos no liekām klapatām, mēs, projekta autori, esam izvēlējušies GAISA SARGU nepiedāvāt vienkāršā apmaiņā pret naudu. Tas būtu pārāk vienkārši. Mēs to <a href="https://github.com/open-lv/air-guard" target="_blank">dodam bez maksas</a>! Ja izveidot savu GAISA SARGU no failiem tev šķiet pārāk sarežģīti- sniedz šo iespēju Latvijas bērniem un jauniešiem <a href="/atbalsti">atbalstot projektu</a>.
+
+			</h4>
+			<br>
+			<h3 class="text-uppercase zilais dosje-h2">Neesmu skola, pulciņš vai cita organizācija, kas darbojas ar bērniem/jauniešiem. Esmu vienkārši onkulis/tante, kas arī grib savu supervaroni. Kā varu to iegādāties?</h3>
+			<br>
+			<h4>
+				Lai izvairītos no liekām klapatām, mēs, projekta autori, esam izvēlējušies GAISA SARGU nepiedāvāt vienkāršā apmaiņā pret naudu. Tas būtu pārāk vienkārši. Mēs to <a href="https://github.com/open-lv/air-guard" target="_blank">dodam bez maksas</a>! Ja izveidot savu GAISA SARGU no failiem tev šķiet pārāk sarežģīti- sniedz šo iespēju Latvijas bērniem un jauniešiem <a href="/atbalsti">atbalstot projektu</a>.
+
+			</h4>
+			<br>
+			<h3 class="text-uppercase zilais dosje-h2">Neesmu skola, pulciņš vai cita organizācija, kas darbojas ar bērniem/jauniešiem. Esmu vienkārši onkulis/tante, kas arī grib savu supervaroni. Kā varu to iegādāties?</h3>
+			<br>
+			<h4>
+				Lai izvairītos no liekām klapatām, mēs, projekta autori, esam izvēlējušies GAISA SARGU nepiedāvāt vienkāršā apmaiņā pret naudu. Tas būtu pārāk vienkārši. Mēs to <a href="https://github.com/open-lv/air-guard" target="_blank">dodam bez maksas</a>! Ja izveidot savu GAISA SARGU no failiem tev šķiet pārāk sarežģīti- sniedz šo iespēju Latvijas bērniem un jauniešiem <a href="/atbalsti">atbalstot projektu</a>.
+
+			</h4>
+			<br>
+			<h3 class="text-uppercase zilais dosje-h2">Neesmu skola, pulciņš vai cita organizācija, kas darbojas ar bērniem/jauniešiem. Esmu vienkārši onkulis/tante, kas arī grib savu supervaroni. Kā varu to iegādāties?</h3>
+			<br>
+			<h4>
+				Lai izvairītos no liekām klapatām, mēs, projekta autori, esam izvēlējušies GAISA SARGU nepiedāvāt vienkāršā apmaiņā pret naudu. Tas būtu pārāk vienkārši. Mēs to <a href="https://github.com/open-lv/air-guard" target="_blank">dodam bez maksas</a>! Ja izveidot savu GAISA SARGU no failiem tev šķiet pārāk sarežģīti- sniedz šo iespēju Latvijas bērniem un jauniešiem <a href="/atbalsti">atbalstot projektu</a>.
+
+			</h4>
+			<br>
+			<h3 class="text-uppercase zilais dosje-h2">Neesmu skola, pulciņš vai cita organizācija, kas darbojas ar bērniem/jauniešiem. Esmu vienkārši onkulis/tante, kas arī grib savu supervaroni. Kā varu to iegādāties?</h3>
+			<br>
+			<h4>
+				Lai izvairītos no liekām klapatām, mēs, projekta autori, esam izvēlējušies GAISA SARGU nepiedāvāt vienkāršā apmaiņā pret naudu. Tas būtu pārāk vienkārši. Mēs to <a href="https://github.com/open-lv/air-guard" target="_blank">dodam bez maksas</a>! Ja izveidot savu GAISA SARGU no failiem tev šķiet pārāk sarežģīti- sniedz šo iespēju Latvijas bērniem un jauniešiem <a href="/atbalsti">atbalstot projektu</a>.
+
+			</h4>
+			<br>
+		</center>
+	</div>
+
 </main>
+<!--Zoho Campaigns Web-Optin Form's Header Code Starts Here-->
+
+<script type="text/javascript" src="https://zc1.maillist-manage.eu/js/optin.min.js" onload="setupSF('sf3z90e63da90dc8e41d1e6ffdc01a8fd458c267b1598ea7e6488b745a48c41eb9ab','ZCFORMVIEW',false,'light',false,'0')"></script>
+<script type="text/javascript">
+	function runOnFormSubmit_sf3z90e63da90dc8e41d1e6ffdc01a8fd458c267b1598ea7e6488b745a48c41eb9ab(th){
+		/*Before submit, if you want to trigger your event, "include your code here"*/
+	};
+</script>
+
+<style>
+.quick_form_5_css * {
+    -webkit-box-sizing: border-box !important;
+    -moz-box-sizing: border-box !important;
+    box-sizing: border-box !important;
+    overflow-wrap: break-word
+}
+input[type="text"]::placeholder {
+    color: rgb(165, 165, 165)
+}
+@media only screen and (max-width: 600px) {.quick_form_5_css[name="SIGNUP_BODY"] { width: 100% !important; min-width: 100% !important; margin: 0px auto !important; padding: 0px !important } .SIGNUP_FLD { width: 90% !important; margin: 10px 5% !important; padding: 0px !important } .SIGNUP_FLD input { margin: 0 !important } }
+</style>
+
+
