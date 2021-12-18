@@ -2,20 +2,64 @@
 layout: default
 ---
 <!-- SALIKT -->
+<nav class="sticky-top navbar navbar-expand-lg navbar-dark bg-primary">
+    <div class="container">
+        <a class="navbar-brand" href="{{ site.url }}" style="display: none;">
+            {% include components/logo-svg.html color="#fff" width="120" %} 
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link" href="/">GALVENĀ</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/pieteikties">Pieteikties</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/atbalsti">Atbalstīt</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="/salikt">Salikšanas pamācība</a>
+                </li>
+                
+            </ul>
+        </div>
+    </div>
+</nav>
 <main>
 
 
 
-    <div class="px-4 py-5 my-5 text-center">
-        <figure>
-            <blockquote class="blockquote">
-                <p>Mani sauc GAISA SARGS, es esmu ikvienas telpas SUPERVARONIS! Kura lapa ir šī?</p>
-				<h1>{{ "Hello World!" | downcase }}</h1>
-                <p>Mana superspēja ir noteikt telpas gaisa kvalitāti un ar tavu palīdzību to uzlabot!</p>
-            </blockquote>
-            <figcaption class="blockquote-footer">
-                <cite title="Source Title">Gaisa sargs</cite>
-            </figcaption>
-        </figure>
+    <div class="container w-75">
+		<div class="row">
+			
+				<p class="cik-gab-sub text-start">Vēl tikai nedaudz..</p>
+				<p class="cik-gab-sub text-end dimants4">..un būsi SUPERVAROŅA komandā!</p>
+			
+		</div>
+		<div class="row">
+			<h3 class="main-subtitle">&emsp;Šī sadaļa vēl ir izstrādes stadijā. 2021. gada Ziemassvētkos-jaunajā gadā mūsu supervaroņu <a href="/komanda">komanda</a> šo saturu atjaunos.
+			</h3>
+			
+		</div>
+		<div class="row">
+			<h4 class="mt-5">Salikšanas pamācība sastāvēs no šādiem moduļiem:<br><br>
+				1) kas ir GAISA SARGS, kāda ir nozīme svaigam gaisam mūsu dzīvēs<br>
+				2) Kas atrodams GAISA SARGA sākotnējā mājvietā- picas kastē? <br>
+				3) Kas elektronikas iespiedplate, kas ir elektronikas komponentes, kas ir lodēšana? <br>
+				4) Darba drošības tehnikas instrukcija.<br>
+				5)Kā pareizi lodēt? Kā pārliecināties, ka ir sanācis labs lodējums? <br>
+				6) Komponenšu salikšana un lodēšana. <br>
+				7) Pārliecināšanās par rezultātu un labojumu veikšana.<br>
+				8) Dzīve ar GAISA SARGU- kā sekot tā norādījumiem, kā parūpēties, lai GAISA SARGS dzīvotu ilgu mūžu un <br>negribētu melot?<br>
+				9) GAISA SARGA smadzeņu programmatūra- kā to pārveidot, kā tās programmēt, kā iemācīt jaunus “vārdus” vai mainīt ekrānā redzamos tekstus. <br>
+
+			</h4>
+			
+		</div>
     </div>
 </main>
