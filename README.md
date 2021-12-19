@@ -2,6 +2,8 @@
 
 Source of the [gaisasargs.lv](https://gaisasargs.lv) website hosted on [Github Pages](https://pages.github.com/) and built using the [Jekyll](https://jekyllrb.com/) static site generator.
 
+For the hardware and software, checkout the [github.com/open-lv/air-guard](https://github.com/open-lv/air-guard) repository.
+
 ## Quickstart running locally with Docker Compose
 
 + Install [Docker Compose](https://docs.docker.com/compose/install/)
