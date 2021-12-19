@@ -14,42 +14,45 @@ For the hardware and software, checkout the [github.com/open-lv/air-guard](https
 
 + Install [Ruby](https://www.ruby-lang.org/en/documentation/installation/)
 + Install [NodeJS](https://nodejs.org/en/download/)
-    + Install [Yarn package manager](https://classic.yarnpkg.com/lang/en/docs/install/):
++ Install [Yarn package manager](https://classic.yarnpkg.com/lang/en/docs/install/):
     ```shell
-    # npm install --global yarn
+    npm install --global yarn
     ```
 
 ### Running Jekyll webserver
 
 + Open terminal and go to `/docs` folder and install required gems:
+
     ```shell
-    $ cd ./docs
-    $ bundle install
+    cd ./docs
+    bundle install
     ```
 
-
 + Run server:
+
     ```shell
-    $ cd ./docs
-    $ bundle exec jekyll serve
+    cd ./docs
+    bundle exec jekyll serve
     ```
 
 ### Running SASS and JS source compiler
 
 + Open terminal and go to `/ui` folder and install required packages
+
     ```shell
-    $ cd ./ui
-    $ yarn install
+    cd ./ui
+    yarn install
     ```
 
 + Compile UI sources and watch for changes:
+
     ```shell
-    $ cd ./ui
-    $ yarn run watch
+    cd ./ui
+    yarn run watch
     ```
 
 + Compile UI sources:
     ```shell
-    $ cd ./ui
-    $ yarn run build
+    cd ./ui
+    yarn run build
     ```
