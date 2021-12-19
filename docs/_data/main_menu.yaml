@@ -1,0 +1,8 @@
+- label: Galvenā
+  url: /
+- label: Pieteikties
+  url: /pieteikties/
+- label: Atbalstīt
+  url: /atbalsti/
+- label: Salikšanas pamācība
+  url: /salikt/
