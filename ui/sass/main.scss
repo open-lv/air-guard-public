@@ -4,6 +4,12 @@
 $primary: #0f47a1;
 $font-sans-serif: 'Source Sans 3', sans-serif;
 $body-font-family: 'Source Sans 3', sans-serif;
+$main-blue: #0f47a1;
+
+$hr-margin-y: 50px;
+$hr-color: $main-blue;
+$hr-opacity: 1;
+$hr-height: 10px;
 
 @import "node_modules/bootstrap/scss/variables";
 @import "node_modules/bootstrap/scss/mixins";
@@ -96,23 +102,22 @@ body {
   background-image: url("/assets/img/hero.png");
   background-size: cover;
 } 
- .main-title{font-weight: 600 !important; font-size: 5rem !important; color: #0f47a1;}
+ .main-title{font-weight: 600 !important; font-size: 5rem !important; color: $main-blue;}
 			
 .h1logo {margin-bottom: 40px;}
 .mainleft{ margin-left: 10px;}
-.main-subtitle {margin-left: 10px; border-left: 10px solid #0f47a1; padding-left: 10px;}
-.zila-linija-horiz {margin: 50px auto 50px auto; display:inline-block; height: 10px; width: 80%; background-color: #0f47a1}
-.zilais {color: #0f47a1;}
-.cik-gab {font-size: 14rem; color: #0f47a1; font-weight: 900; font-style: italic;}
-.cik-gab-sub {font-size: 4rem; color: #0f47a1; font-weight: 900; font-style: italic;}
-.cik-gab-tel {font-size: 6rem; color: #0f47a1 !important; font-weight: 900; font-style: italic;}
+.main-subtitle {margin-left: 10px; border-left: 10px solid $main-blue; padding-left: 10px;}
+.zilais {color: $main-blue;}
+.cik-gab {font-size: 14rem; color: $main-blue; font-weight: 900; font-style: italic;}
+.cik-gab-sub {font-size: 4rem; color: $main-blue; font-weight: 900; font-style: italic;}
+.cik-gab-tel {font-size: 6rem; color: $main-blue !important; font-weight: 900; font-style: italic;}
 .dimants1 {background-image: url("/assets/img/dimants-1.svg"); background-repeat: no-repeat; background-size: 50px; background-position: left bottom;}
 .dimants2 {background-image: url("/assets/img/dimants-1.svg"); background-repeat: no-repeat; background-size: 50px; background-position: top center;}
 .dimants3 {background-image: url("/assets/img/dimants-2.svg"); background-repeat: no-repeat; background-size: 50px; background-position: 20% 30%;}
 .dimants5 {background-image: url("/assets/img/dimants-2.svg"); background-repeat: no-repeat; background-size: 50px; background-position: top left;}
 .dimants6 {background-image: url("/assets/img/dimants-2.svg"); background-repeat: no-repeat; background-size: 50px; background-position: bottom left;}
-.supervaronja-supervaronji {font-size: 2rem; color: #0f47a1; font-weight: 900; font-style: italic;}
-.supervaronja-supervaronji-telefonam {font-size: 5rem; color: #0f47a1; font-weight: 900; font-style: italic;}
+.supervaronja-supervaronji {font-size: 2rem; color: $main-blue; font-weight: 900; font-style: italic;}
+.supervaronja-supervaronji-telefonam {font-size: 5rem; color: $main-blue; font-weight: 900; font-style: italic;}
 
 .pogas-teksts{font-size: 32px !important; font-weight: 700; font-style: italic;}
 .dosje-h2{font-weight: 700; font-style: italic;}
