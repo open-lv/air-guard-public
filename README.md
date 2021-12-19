@@ -1,7 +1,6 @@
-# Air Guard landing page (gaisasargs.lv)
+# Air Guard Website
 
-Page is based on [Github Pages](https://pages.github.com/) hosting and deployment and is built
-using [Jekyll](https://jekyllrb.com/) static site generator
+Source of the [gaisasargs.lv](https://gaisasargs.lv) website hosted on [Github Pages](https://pages.github.com/) and built using the [Jekyll](https://jekyllrb.com/) static site generator.
 
 ## Quickstart running locally with Docker Compose
 
