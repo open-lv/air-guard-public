@@ -1,5 +1,7 @@
 # Air Guard Website
 
+[![Build and Deploy Github Pages](https://github.com/open-lv/air-guard-public/actions/workflows/gh-pages.yml/badge.svg)](https://github.com/open-lv/air-guard-public/actions/workflows/gh-pages.yml)
+
 Source of the [gaisasargs.lv](https://gaisasargs.lv) website hosted on [Github Pages](https://pages.github.com/) and built using the [Jekyll](https://jekyllrb.com/) static site generator.
 
 For the hardware and software, checkout the [github.com/open-lv/air-guard](https://github.com/open-lv/air-guard) repository.
