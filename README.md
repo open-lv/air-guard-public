@@ -69,3 +69,7 @@ This should be used only if you're not able to run the Docker environment locall
     cd ./ui
     yarn run build
     ```
+
+## Credits
+
+See [the contributors](https://github.com/open-lv/air-guard-public/graphs/contributors).
