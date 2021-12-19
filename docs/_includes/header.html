@@ -1,6 +1,6 @@
 <nav class="sticky-top navbar navbar-expand-lg navbar-dark bg-primary">
     <div class="container">
-        <a class="navbar-brand" href="{{ site.url }}">
+        <a class="navbar-brand visually-hidden" href="{{ site.url }}">
             {% include components/logo-svg.html color="#fff" width="120" %} 
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
@@ -9,21 +9,11 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                {% for item in site.data.main_menu %}
                 <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="/">GALVENĀ</a>
+                    <a class="nav-link {% if page.url == item.url %}active{% endif %}" href="{{ item.url }}">{{ item.label }}</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="/pieteikties">Pieteikties</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="/atbalsti">Atbalstīt</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="/salikt">Salikšanas pamācība</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#buj">Biežāk uzdotie jautājumi</a>
-                </li>
+                {% endfor %}
             </ul>
         </div>
     </div>
