@@ -6,13 +6,23 @@ Source of the [gaisasargs.lv](https://gaisasargs.lv) website hosted on [Github P
 
 For the hardware and software, checkout the [github.com/open-lv/air-guard](https://github.com/open-lv/air-guard) repository.
 
-## Quickstart running locally with Docker Compose
+## Contribute
 
-+ Install [Docker Compose](https://docs.docker.com/compose/install/)
-+ Run `docker-compose up` from project root
-+ Open http://localhost:4000
+Please [open an issue](https://github.com/open-lv/air-guard-public/issues/new) to report a problem with the website or suggest an addition. Alternatively, [open a pull request](https://github.com/open-lv/air-guard-public/pulls) with the suggested changes. 
 
-## Without Docker
+## Development Environment
+
+The repository includes a Docker environment that includes all the necessary tooling. Alternatively, you can install and run the tooling locally.
+
+### Using Docker Compose
+
++ Install [Docker Compose](https://docs.docker.com/compose/install/).
++ Run `docker-compose up` from project root directory to start the development environment in the "watch" mode that automatically detects all the changes to the source files and builds the site.
++ Open http://localhost:4000 to access the local development site.
+
+### Using Local Tooling
+
+This should be used only if you're not able to run the Docker environment locally.
 
 + Install [Ruby](https://www.ruby-lang.org/en/documentation/installation/)
 + Install [NodeJS](https://nodejs.org/en/download/)
@@ -21,7 +31,7 @@ For the hardware and software, checkout the [github.com/open-lv/air-guard](https
     npm install --global yarn
     ```
 
-### Running Jekyll webserver
+#### Start the Jekyll webserver
 
 + Open terminal and go to `/docs` folder and install required gems:
 
@@ -37,7 +47,7 @@ For the hardware and software, checkout the [github.com/open-lv/air-guard](https
     bundle exec jekyll serve
     ```
 
-### Running SASS and JS source compiler
+#### Run the CSS and JS build tools
 
 + Open terminal and go to `/ui` folder and install required packages
 
@@ -54,6 +64,7 @@ For the hardware and software, checkout the [github.com/open-lv/air-guard](https
     ```
 
 + Compile UI sources:
+
     ```shell
     cd ./ui
     yarn run build
