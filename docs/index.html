@@ -49,17 +49,10 @@ title: Kas ir GAISA SARGS
 
 	<div class="container">
 		<hr class="zila-linija-horiz">
-		<div class="row ">
-			<div class="col-sm  m-0 p-0 d-lg-none"><p class="cik-gab-tel text-center">191x VARAM RADĪT<br>~<br></p></div>
-			<div class="col-sm  m-0 p-0 dimants2 d-none d-lg-block"><p class="cik-gab text-end">191x</p></div>
-			<div class="col-sm dimants1 d-none d-lg-block"><p class="cik-gab-sub text-start align-text-bottom">VARAM RADĪT</p></div>
-		</div>
-		<div class="row ">
-			<div class="col-sm  m-0 p-0 d-none d-lg-block"><p class="cik-gab-sub text-end">PIETEIKUMI</p></div>
-			<div class="col-sm dimants4 d-none d-lg-block"><p class="cik-gab text-start">96</p></div>
-			<div class="col-sm d-lg-none"><p class="cik-gab-tel text-center">96 RINDĀ</p></div>
-		</div>
-
+		{% comment %}
+			Numbers update in _data/numbers.yaml
+		{% endcomment %}
+		{% include components/application-queue.html %}
 		<div class="row justify-content-center align-items-center mx-1">
 
 			<a class="btn btn-primary btn-lg btn-block mx-5 my-5 col-sm pogas-teksts" href="/atbalsti/"><svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" fill="currentColor" class="bi bi-cash-coin" viewBox="0 0 16 16">
@@ -89,76 +82,70 @@ title: Kas ir GAISA SARGS
 		</div>
 		</div>
 		<div class="row align-items-top text-center">
-			<div class="col-md-6 col-lg-4 mb-4">
-				<img class="img-fluid" src="/assets/img/miegainiba350.jpg" alt="Gaisa sargs darbībā"/>
-				<h2 class="text-uppercase zilais dosje-h2 my-2">Nogurums, miegainība?</h2>
-				<h4>Iespējams telpā ir paaugstināts oglekļa dioksīda līmenis. Mūsu deguns to nesaož!
-					Uzzini, kad ir laiks atvērt logu, ar GAISA SARGA palīdzību.
-					Paaugstināts oglekļa dioksīda līmenis telpā ir viens no priekšvēstnešiem videi,
-					kurā līpīgiem vīrusiem ir vieglāk izplatīties.</h4>
-			</div>
-			<div class="col-md-6 col-lg-4 mb-4">
-				<img class="img-fluid" src="/assets/img/sensors350.jpg" alt="Gaisa sarga deguns"/>
-				<h2 class="text-uppercase zilais dosje-h2 my-2">Supervaroņa deguns</h2>
-				<h4>Īsts, precīzs un melot nemīlošs sensors (<a
-						href="https://www.winsen-sensor.com/d/files/infrared-gas-sensor/mh-z19c-pins-type-co2-manual-ver1_0.pdf">NDIR
-					WINSEN MH-Z19C</a>) ir GAISA SARGA superspēju noslēpuma atslēga. Tas nepārtraukti ošņā telpas gaisu
-					un dod ziņu GAISA SARGA smadzenēm par novērojumiem.</h4>
-			</div>
-			<div class="col-md-6 col-lg-4 mb-4">
-				<img class="img-fluid" src="/assets/img/smadzenes350.jpg" alt="Gaisa sarga smadzenes"/>
-				<h2 class="text-uppercase zilais dosje-h2 my-2">Supervaroņa smadzenes</h2>
-				<h4>Nosēšanās uz Mēness virsmas bija visas cilvēces iespaidīgākais sasniegums.
-					Pirmā Mēness kuģa datora smadzenes bija vairāk kā 200 reizes lēnākas par GAISA SARGA smadzenēm —
-					ESP32 mikrokontrolieri.
-					Apskati supervaroņa <a href="/salikt/">programmēšanas pamācību</a>, lai padarītu savu GAISA SARGU
-					unikālu.
-				</h4>
-			</div>
-			<div class="col-md-6 col-lg-4 mb-4">
-				<img class="img-fluid" src="/assets/img/televizors350.jpg" alt="Ekrāns"/>
-				<h2 class="text-uppercase zilais dosje-h2 my-2">Televizors skudrām?</h2>
-				<h4>
-					Uz GAISA SARGA krūtīm ir mazs televizors, uz kura vari redzēt oglekļa dioksīda daudzumu
-					apkārtējā gaisā. Personalizējot GAISA SARGA smadzeņu programmu —
-					variet uz tā attēlot savu informāciju.
-				</h4>
-			</div>
-			<div class="col-md-6 col-lg-4 mb-4">
-				<img class="img-fluid" src="/assets/img/rokturis350.jpg" alt="Loga rokturis"/>
-				<h2 class="text-uppercase zilais dosje-h2 my-2">Loga rokturis</h2>
-				<h4>Tas, diemžēl, nav atrodams GAISA SARGA picas kastē.
-					JŪS, GAISA SARGS un loga rokturis ir supervaroņu komanda, kas aizsargās telpas gaisu!</h4>
-			</div>
-			<div class="col-md-6 col-lg-4 mb-4">
-				<img class="img-fluid" src="/assets/img/pikstulis350.jpg" alt="Pīkstulis"/>
-				<h2 class="text-uppercase zilais dosje-h2 my-2">Spalga balss</h2>
-				<h4>GAISA SARGS ir lakonisks, bet kad tam ir ko teikt — tajā jaieklausās, jo to ir grūti nedzirdēt.
-					Mainot GAISA SARGA smadzeņu programmu vari iemācīt tam jaunas dziesmas!
-				</h4>
-			</div>
-			<div class="col-md-6 col-lg-4 mb-4">
-				<img class="img-fluid" src="/assets/img/gaisma350.jpg" alt="Gaisa sarga vērīgās acis"/>
-				<h2 class="text-uppercase zilais dosje-h2 my-2">Gandrīz vērīgas acis</h2>
-				<h4>Lai arī GAISA SARGA superspēja ir izcila oža, tas spēj arī redzēt. Diezgan slikti, bet tomēr — redze
-					ir redze. GAISA SARGS spēj sajust, cik telpā ir gaišs.</h4>
-			</div>
-			<div class="col-md-6 col-lg-4 mb-4">
-				<img class="img-fluid" src="/assets/img/instrumenti350.jpg" alt="Instrumenti"/>
-				<h2 class="text-uppercase zilais dosje-h2 my-2">Instrumenti salikšanai</h2>
-				<h4>
-					GAISA SARGA picas kaste satur pamatinstrumentu komplektu, kas nepieciešams, lai varētu lodēt
-					elektronikas plates.
-					Pēc komplekta salikšanas instrumentus varēsiet izmantot lietu remontam un citām operācijām.
-				</h4>
-			</div>
-			<div class="col-md-6 col-lg-4 mb-4">
-				<img class="img-fluid" src="/assets/img/makoniem350.jpg" alt="Gaisa sarga sapņainās acis"/>
-				<h2 class="text-uppercase zilais dosje-h2 my-2">Tāds sapņains tipiņš</h2>
-				<h4>GAISA SARGAM arī ir sapņi. GAISA SARGS reizēm blenž tālumā, sapņojot par iespējām, kādas var
-					sasniegt tā jaudīgās smadzenes — mākoņošana INTERNETĀ, bezvadu tīkli un pat zilzobi!
-				</h4>
-			</div>
+			{% include components/feature-item.html %}
+			{% include components/feature-item.html
+				src='/assets/img/sensors350.jpg'
+				alt='Gaisa sarga deguns'
+				heading='Supervaroņa deguns'
+				text='Īsts, precīzs un melot nemīlošs sensors (<a
+				href="https://www.winsen-sensor.com/d/files/infrared-gas-sensor/mh-z19c-pins-type-co2-manual-ver1_0.pdf">NDIR
+			WINSEN MH-Z19C</a>) ir GAISA SARGA superspēju noslēpuma atslēga. Tas nepārtraukti ošņā telpas gaisu
+			un dod ziņu GAISA SARGA smadzenēm par novērojumiem.'
+			%}
+			{% include components/feature-item.html
+				src='/assets/img/smadzenes350.jpg'
+				alt='Gaisa sarga smadzenes'
+				heading='Supervaroņa smadzenes'
+				text='Nosēšanās uz Mēness virsmas bija visas cilvēces iespaidīgākais sasniegums.
+			Pirmā Mēness kuģa datora smadzenes bija vairāk kā 200 reizes lēnākas par GAISA SARGA smadzenēm —
+			ESP32 mikrokontrolieri.
+			Apskati supervaroņa <a href="/salikt/">programmēšanas pamācību</a>, lai padarītu savu GAISA SARGU
+			unikālu.'
+			%}
+			{% include components/feature-item.html
+				src='/assets/img/televizors350.jpg'
+				alt='Ekrāns'
+				heading='Televizors skudrām?'
+				text='Uz GAISA SARGA krūtīm ir mazs televizors, uz kura vari redzēt oglekļa dioksīda daudzumu
+			apkārtējā gaisā. Personalizējot GAISA SARGA smadzeņu programmu —
+			variet uz tā attēlot savu informāciju.'
+			%}
+			{% include components/feature-item.html
+				src='/assets/img/rokturis350.jpg'
+				alt='Loga rokturis'
+				heading='Loga rokturis'
+				text='Tas, diemžēl, nav atrodams GAISA SARGA picas kastē.
+			JŪS, GAISA SARGS un loga rokturis ir supervaroņu komanda, kas aizsargās telpas gaisu!'
+			%}
+			{% include components/feature-item.html
+				src='/assets/img/pikstulis350.jpg'
+				alt='Pīkstulis'
+				heading='Spalga balss'
+				text='GAISA SARGS ir lakonisks, bet kad tam ir ko teikt — tajā jaieklausās, jo to ir grūti nedzirdēt.
+			Mainot GAISA SARGA smadzeņu programmu vari iemācīt tam jaunas dziesmas!'
+			%}
+			{% include components/feature-item.html
+				src='/assets/img/gaisma350.jpg'
+				alt='Gaisa sarga vērīgās acis'
+				heading='Gandrīz vērīgas acis'
+				text='Lai arī GAISA SARGA superspēja ir izcila oža, tas spēj arī redzēt. Diezgan slikti, bet tomēr — redze
+			ir redze. GAISA SARGS spēj sajust, cik telpā ir gaišs.'
+			%}
+			{% include components/feature-item.html
+				src='/assets/img/instrumenti350.jpg'
+				alt='Instrumenti'
+				heading='Instrumenti salikšanai'
+				text='GAISA SARGA picas kaste satur pamatinstrumentu komplektu, kas nepieciešams, lai varētu lodēt
+			elektronikas plates.
+			Pēc komplekta salikšanas instrumentus varēsiet izmantot lietu remontam un citām operācijām.'
+			%}
+			{% include components/feature-item.html
+				src='/assets/img/makoniem350.jpg'
+				alt='Gaisa sarga sapņainās acis'
+				heading='Tāds sapņains tipiņš'
+				text='GAISA SARGAM arī ir sapņi. GAISA SARGS reizēm blenž tālumā, sapņojot par iespējām, kādas var
+			sasniegt tā jaudīgās smadzenes — mākoņošana INTERNETĀ, bezvadu tīkli un pat zilzobi!'
+			%}
 		</div>
 	</div>
 
